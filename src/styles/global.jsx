@@ -21,4 +21,27 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
+  a{
+    color:inherit;
+    text-decoration:none;
+    font-family:inherit;
+  }
+  [aria-current="page"]{
+    position:relative;
+    &:after{
+      content:'';
+      position:absolute;
+      bottom: 0;
+      left:45%;
+      /* width:1rem; */
+      /* height: 2px; */
+      /* background-color:white; */
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid white;
+    }
+  }
 `;
