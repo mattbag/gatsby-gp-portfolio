@@ -18,6 +18,7 @@ import avatar from '../images/avatar.jpg';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
+  will-change:transform;
   background: ${props => props.bg};
   svg {
     fill: ${props => props.fill};

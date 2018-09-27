@@ -8,7 +8,7 @@ import 'typeface-open-sans';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
-import ProjectCard from '../components/ProjectCard';
+// import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
@@ -17,6 +17,7 @@ import avatar from '../images/avatar.jpg';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
+  will-change:transform;
   background: ${props => props.bg};
   svg {
     fill: ${props => props.fill};
